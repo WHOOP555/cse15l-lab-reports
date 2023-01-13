@@ -1,9 +1,10 @@
-Hello World!
-*I am* **Because** *I thought*.
----
-## Cartesian Doubt 2
 # Zero-knowledge 1
-***
+
+## Cartesian Doubt 2
+
+Hello World!
+*I am* **because** I *thought*.
+---
 "Forgive me / they were delicious / so sweet / and so cold" - William Carlos Williams, ["This is Just to Say"](https://www.poetryfoundation.org/poems/56159/this-is-just-to-say)
 ***
 "I saw the figure 5 / in gold" - William Carlos Williams, "The Great Figure"
