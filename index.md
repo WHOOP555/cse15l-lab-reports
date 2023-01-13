@@ -19,3 +19,5 @@ Hello World!
 1. AI
 2. Cryptography
 3. Post-Quantum VPNs
+
+*I do not own or claim to have the rights for any of the cited or displayed work above.*
