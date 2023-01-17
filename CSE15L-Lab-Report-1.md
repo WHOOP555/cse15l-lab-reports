@@ -18,4 +18,4 @@
   * Some general commands to try are: `cd`, `ls`, `pwd`, `mkdir`, `cp`, `cat`. Some variations can be added to these general commands, such as `ls -lat`, which may result in something like this: 
   <img width="489" alt="image" src="https://user-images.githubusercontent.com/122576045/212817341-170116ef-0939-4546-ade7-acaeabd294e4.png">
   * Finally, to exit remote server, simply run the `exit` command, which may produce a result like this: 
-  * <img width="246" alt="image" src="https://user-images.githubusercontent.com/122576045/212817736-7f15171e-688f-4bbb-851c-7e01db1cd713.png">
+   <img width="246" alt="image" src="https://user-images.githubusercontent.com/122576045/212817736-7f15171e-688f-4bbb-851c-7e01db1cd713.png">
