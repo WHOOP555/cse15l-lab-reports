@@ -12,7 +12,10 @@
    * You should now be connected and view some text like this in the terminal: <img width="467" alt="image" src="https://user-images.githubusercontent.com/122576045/212815184-b873658b-b752-4a7f-a711-329b96391483.png">
 ---
 3. ## Trying Some Commands
-   * When trying to list the files present in another student's account, utilize `ls <directory>` where "`<directory>`" is the respective student's directory, which can be in the format of "/home/linux/ieng6/cs15lwi23/cs15lwi23atr" where the last 3 letters are characteristic of the respective student's account. 
+   * When trying to list the files present in another student's account, utilize `ls <directory>` where "`<directory>`" is the respective student's directory, which can be in the format of "/home/linux/ieng6/cs15lwi23/cs15lwi23atr" where the last 3 letters are characteristic of the respective student's account. Here is an example of what attempting to access another student's account may look like:
    <img width="532" alt="image" src="https://user-images.githubusercontent.com/122576045/212816703-6f21aafa-f571-4f79-9d5b-8530c4b45536.png">
-   * Some general commands to try are: `cd`, `ls`, `pwd`, `mkdir`, `cp`, `cat`. Some variations can be added to these general commands, such as `ls -lat`, which may result in something like this: <img width="489" alt="image" src="https://user-images.githubusercontent.com/122576045/212817341-170116ef-0939-4546-ade7-acaeabd294e4.png">
-   * Finally, to exit remote server, simply run the `exit` command, which may produce a result like this: <img width="246" alt="image" src="https://user-images.githubusercontent.com/122576045/212817736-7f15171e-688f-4bbb-851c-7e01db1cd713.png">
+  
+  * Some general commands to try are: `cd`, `ls`, `pwd`, `mkdir`, `cp`, `cat`. Some variations can be added to these general commands, such as `ls -lat`, which may result in something like this: 
+  <img width="489" alt="image" src="https://user-images.githubusercontent.com/122576045/212817341-170116ef-0939-4546-ade7-acaeabd294e4.png">
+  * Finally, to exit remote server, simply run the `exit` command, which may produce a result like this: 
+  * <img width="246" alt="image" src="https://user-images.githubusercontent.com/122576045/212817736-7f15171e-688f-4bbb-851c-7e01db1cd713.png">
