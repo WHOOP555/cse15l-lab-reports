@@ -3,7 +3,7 @@
 1. ## Installing Visual Studio Code
     * The first step to logging into a course specific account on ieng6 is to install Visual Studio Code.
     * I already had Visual Studio Code installed on my device prior to this remote access lab, so I did not have to install it in this session.
-    * If you do not have Visual Studio Code installed on your device, navigate to [Link](https://code.visualstudio.com/download) and download the version of Visual Studio Code that is compatible with your device and sufficient for your course. 
+    * If you do not have Visual Studio Code installed on your device, navigate [here](https://code.visualstudio.com/download) and download the version of Visual Studio Code that is compatible with your device and sufficient for your course. 
   ![image](https://user-images.githubusercontent.com/122576045/212810552-6c1e7d85-a977-454a-a5e0-62de1dd01e4e.png)
   ---
 2. ## Remotely Connecting
