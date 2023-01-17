@@ -1,2 +1,3 @@
-# CSE 15L Lab Report 1
-## Remote Access
+# CSE 15L Lab Report 1: Remote Access
+---
+1. ## Installing Visual Studio Code
