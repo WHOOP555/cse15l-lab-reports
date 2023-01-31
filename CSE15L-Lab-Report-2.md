@@ -61,7 +61,10 @@ Non-failing Input:
     }
 ```
 Respective Symptoms:
-
+![image](https://user-images.githubusercontent.com/122576045/215698995-632e68d7-6230-4328-abe4-f1dc2dc02f01.png)
+As can be seen from this screenshot, when running the first junit test (for a failure inducing input), the test fails, as is expected. The arrays start to differ, at index 0, with a 4 being in the place of a 6.
+![image](https://user-images.githubusercontent.com/122576045/215699208-21d6f472-d28c-4f1a-a124-40a77d9889ad.png)
+As is seen from the screenshot, running junit on this test reveals a green checkmark, highlighting that this test is succesful. Since this test was designed to be for an input that does not induce failure, this makes sense, since the program still works for this input.
 The bug in the code:
 ```
 static void reverseInPlace(int[] arr) {
