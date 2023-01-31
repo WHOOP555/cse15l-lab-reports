@@ -1,5 +1,7 @@
 # Lab Report 2 - Servers and Bugs
 ## String Server
+![image](https://user-images.githubusercontent.com/122576045/215695268-750807c7-6c37-4eda-93d1-45cd4fb28a27.png)
+
 ![image](https://user-images.githubusercontent.com/122576045/215695199-94a930b3-eefe-43ac-96e2-a8902931e21f.png)
 
 ***
