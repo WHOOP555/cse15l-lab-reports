@@ -1,10 +1,48 @@
 # Lab Report 2 - Servers and Bugs
-## String Server
+## StringServer.java
+The code:
+```
+import java.io.IOException;
+import java.net.URI;
+class Handler implements URLHandler {
+    // The one bit of state on the server: a number that will be manipulated by
+    // various requests.
+    String data = "";
+    public String handleRequest(URI url) {
+        if (url.getPath().equals("/")) {
+            return data;
+        } else if (url.getPath().equals("/add-message")) {
+            String toConcat = url.getQuery().substring
+            (2, url.getQuery().length()) + "\n";
+            data = data + toConcat;
+            return data;
+        } 
+        else {
+            return "404 Not Found!";
+        }
+    }
+}
+public class StringServer {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new Handler());
+    }
+}
+```
 ![image](https://user-images.githubusercontent.com/122576045/215695268-750807c7-6c37-4eda-93d1-45cd4fb28a27.png)
-
+1. In the above screenshot, first of all the handleRequest() method is called. Next, the getPath() method is called. After this, the equals() method is called. Then, the getQuery() method is called, followed by a call to .substring(), .getQuery(), and .length().
+2. The argument for the handleRequest() method is the respective URI (/add-message?s=Hello), and there is no argument for the rest of the methods except .equals(), whose argument is the String "/add-message", and .substring(), whose argument is the int 2 and the int url.getQuery().length(), which is 7. 
+3. After the passing of the method, the value of the field, data, is merely the String "Hello" + "\n", while the value prior to this was simply the empty String.
 ![image](https://user-images.githubusercontent.com/122576045/215695199-94a930b3-eefe-43ac-96e2-a8902931e21f.png)
-
-***
+1. In the above screenshot, first of all the handleRequest() method is called. Next, the getPath() method is called. After this, the equals() method is called. Then, the getQuery() method is called, followed by a call to .substring(), .getQuery(), and .length().
+2. The argument for the handleRequest() method is the respective URI (/add-message?s=potatoes), and there is no argument for the rest of the methods except .equals(), whose argument is the String "/add-message", and .substring(), whose argument is the int 2 and the int url.getQuery().length(), which is 10. 
+3. After the passing of the method, the value of the field, data, is merely the String "Hello" + "\n" + "potatoes" + "\n", while the value prior to this was just "Hello" + "\n".
 ## reverseInPlace() Bug
 Failure Inducing Input:
 ```@Test
