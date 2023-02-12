@@ -1,12 +1,12 @@
 # CSE 15L Lab Report 3: Grep Command-Line Options
 ## -c (or --count)
 
-Example 1
-Input Command: `$ grep "." --count written_2/non-fiction/OUP/Abernathy/ch1.txt`
-Output: `74`
-Example 2
-Input Command: `$ grep -c "Bahamas" written_2/travel_guides/berlitz2/Bahamas-History.txt`
-Output: `23`
+**Example 1**
+**Input Command:** `$ grep "." --count written_2/non-fiction/OUP/Abernathy/ch1.txt`
+**Output:** `74`
+**Example 2**
+**Input Command:** `$ grep -c "Bahamas" written_2/travel_guides/berlitz2/Bahamas-History.txt`
+**Output: **`23`
 
 In these examples, the -c command-line option ensures that the output returns the number of matching lines with the text in quotes (instead of the actual lines themselves).
 This is useful because it easily allows the user to determine how many lines match a certain line of text: instead of having to save the output to a file and using `$ wc`, the user can simply use this.
@@ -15,12 +15,12 @@ This is useful because it easily allows the user to determine how many lines mat
 ## -n (or --line-number)
 
 Example 1
-Input Command: `$ grep -n "serene" written_2/travel_guides/berlitz2/Amsterdam-WhereToGo.txt`
-Output: `41:Cross the river via Magere Brug then travel one block north and take a left along the northern bank of the Herengracht Canal. Here you will get your first glimpse of the canal system which was built during Amsterdam’s Golden Age and revolutionized the city. During its time, probably the most sought after and expensive real estate in the world. Herengracht particularly has many beautiful houses which can really only be appreciated by an afternoon strolling by them (see box page 66). This part of town is still mostly residential and many houses have been converted into apartments for successful Amsterdammers. It is fascinating to peek inside at the ultra-modern interiors, which give a feel of the flair the Dutch seem to have for interior design.62:Although only a small square, and cut by so many tramlines that it is difficult to know which way to look, it has a very beautiful tower — Muntorren (Mint Tower). Originally a medieval gate guarding the entrance to the city, it was damaged by fire in 1619, and the clock tower was added by de Keyser during the renovations of 1620. In 1699 the carillon was installed and this still fills the air with its regular bell rounds. During the war with France in 1672, when Amsterdam had its supply of money cut off, the tower was transformed for a short time into the city mint, and the name has remained since that time.
+**Input Command:** `$ grep -n "serene" written_2/travel_guides/berlitz2/Amsterdam-WhereToGo.txt`
+**Output: **`41:Cross the river via Magere Brug then travel one block north and take a left along the northern bank of the Herengracht Canal. Here you will get your first glimpse of the canal system which was built during Amsterdam’s Golden Age and revolutionized the city. During its time, probably the most sought after and expensive real estate in the world. Herengracht particularly has many beautiful houses which can really only be appreciated by an afternoon strolling by them (see box page 66). This part of town is still mostly residential and many houses have been converted into apartments for successful Amsterdammers. It is fascinating to peek inside at the ultra-modern interiors, which give a feel of the flair the Dutch seem to have for interior design.62:Although only a small square, and cut by so many tramlines that it is difficult to know which way to look, it has a very beautiful tower — Muntorren (Mint Tower). Originally a medieval gate guarding the entrance to the city, it was damaged by fire in 1619, and the clock tower was added by de Keyser during the renovations of 1620. In 1699 the carillon was installed and this still fills the air with its regular bell rounds. During the war with France in 1672, when Amsterdam had its supply of money cut off, the tower was transformed for a short time into the city mint, and the name has remained since that time.
 94:Beside the Palace sits Nieuwe Kerk (New Church) built before the Royal Palace, but not the oldest church in the city, hence its name. The church has suffered several catastrophic fires during its history and was stripped of all its treasures during the Alteration. The pulpit is interesting since it is beautiful but extremely ornate for a Protestant place of worship.119:Just 5 km (2.75 miles) beyond Monnickendam is the community of Marken, one of the most beautiful villages in the Netherlands and home to a community of Calvinist Dutch whose traditions reach back hundreds of years. The older inhabitants of this close-knit community still wear traditional Dutch costume as everyday wear.`
-Example 2
-Input Command: `$ grep "Bali" -n written_2/travel_guides/berlitz2/Bali-History.txt`
-Output: `6:Today’s Indonesians mainly descend from people who came from south China via the Malay peninsula and moved along the island chain to Java, Bali, Lombok, and beyond, from 3000 to 1000 b.c. Archaeological finds show that there was a flourishing Bronze Age culture in Bali and Lombok between about 1000 and 100 b.c. Trade and cultural exchanges with Southeast Asia had certainly begun by that period, and there were frequent contacts with India by a.d. 100. About this time, too, wet rice cultivation was introduced to Bali, changing the face of the countryside to its present appearance of rice paddy fields and terraces.
+**Example 2**
+**Input Command:** `$ grep "Bali" -n written_2/travel_guides/berlitz2/Bali-History.txt`
+**Output:** `6:Today’s Indonesians mainly descend from people who came from south China via the Malay peninsula and moved along the island chain to Java, Bali, Lombok, and beyond, from 3000 to 1000 b.c. Archaeological finds show that there was a flourishing Bronze Age culture in Bali and Lombok between about 1000 and 100 b.c. Trade and cultural exchanges with Southeast Asia had certainly begun by that period, and there were frequent contacts with India by a.d. 100. About this time, too, wet rice cultivation was introduced to Bali, changing the face of the countryside to its present appearance of rice paddy fields and terraces.
 7:Indian traders and teachers brought Buddhism to Java. It had only a limited influence in Bali, however, where people continued in their ancient animist beliefs, worshipping the spirits of the mountains, rivers, and other natural forces.
 8:Hinduism Comes to Bali
 9:In the eighth and ninth centuries a.d., several Buddhist rulers in Java converted to Hinduism, along with their subjects. This time, many people in Bali followed suit, perhaps attracted by the complex Hindu mythology — the Balinese today still have a love of the old stories — and by the way their local gods could be housed easily in the crowded Hindu pantheon. Around 930, the kingdom of East Java conquered Bali and the conversion process accelerated. A mild form of the caste system and the concept of the Hindu trinity of Brahma, Shiva, and Vishnu were introduced. But Bali was no mere vassal state of Java. From 1019 to 1042, Airlangga, son of the Balinese king Udayana, ruled over East Java with the help of a Javanese princess, while his young brother acted as regent in Bali. During the 12th and 13th centuries, Bali was often independent.
@@ -46,17 +46,17 @@ This can be useful if one wants to know not only whether some text is within a f
 ***
 ## -r (or --recursive)
 
-Example 1
-Input Command: `$ grep -r "serenity" written_2`
-Output: `written_2/travel_guides/berlitz1/WhereToFrance.txt:        serenity that is in itself as evocative as the remaining concrete
+**Example 1**
+**Input Command:** `$ grep -r "serenity" written_2`
+**Output:** `written_2/travel_guides/berlitz1/WhereToFrance.txt:        serenity that is in itself as evocative as the remaining concrete
 written_2/travel_guides/berlitz1/WhereToIndia.txt:        repose and serenity made from a delicate combination of
 written_2/travel_guides/berlitz1/WhereToItaly.txt:        can appreciate the typical Venetian serenity even without understanding
 written_2/travel_guides/berlitz1/WhereToJapan.txt:        the eyes half-closed in an expression of profound serenity. The statue    
 written_2/travel_guides/berlitz1/WhereToJapan.txt:        on Sundays it offers all the serenity of rush hour at Kyoto’s garish      
 written_2/travel_guides/berlitz2/Algarve-WhereToGo.txt:After the salty flavor of Olhão and the rural serenity of Moncarapacho, the aristocratic bearings of Tavira, one of the true gems of the Algarve, may come as something of a surprise. One of the region’s most historic cities, its Moorish, Reconquista, and Renaissance roots are clearly visible.`
-Example 2
-Input Command: `$ grep "pleasure" -r written_2/travel_guides/berlitz1`
-Output: `written_2/travel_guides/berlitz1/HistoryHawaii.txt:        pleasure. These Western ideas, which seemed to amuse Kamehameha, were
+**Example 2**
+**Input Command:** `$ grep "pleasure" -r written_2/travel_guides/berlitz1`
+**Output:** `written_2/travel_guides/berlitz1/HistoryHawaii.txt:        pleasure. These Western ideas, which seemed to amuse Kamehameha, were
 written_2/travel_guides/berlitz1/HistoryMalaysia.txt:        find a place next to worldly pleasures. The Malay aristocracy preferred
 written_2/travel_guides/berlitz1/IntroIndia.txt:        least, pleasure. At the center of the confrontation with the harsh
 written_2/travel_guides/berlitz1/IntroJamaica.txt:        The recreational pleasures that ordinary islanders enjoy
@@ -109,15 +109,15 @@ This can be useful to search for certain text through an entire directory and/or
 ***
 ## -o (or --only-matching)
 
-Example 1
-Input Command: $ grep -o `"democracy" written_2/travel_guides/berlitz2/Athens-History.txt`
-Output: `democracy
+**Example 1**
+**Input Command:** $ grep -o `"democracy" written_2/travel_guides/berlitz2/Athens-History.txt`
+**Output:** `democracy
 democracy
 democracy
 democracy`
-Example 2
-Input Command: `$ grep "gold" -o written_2/travel_guides/berlitz2/California-History.txt`
-Output: `gold
+**Example 2**
+**Input Command:** `$ grep "gold" -o written_2/travel_guides/berlitz2/California-History.txt`
+**Output:** `gold
 gold
 gold
 gold
