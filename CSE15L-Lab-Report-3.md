@@ -1,5 +1,5 @@
-## CSE 15L Lab Report 3: Grep Command-Line Options
-# -c (or --count)
+# CSE 15L Lab Report 3: Grep Command-Line Options
+## -c (or --count)
 
 Example 1
 Input Command: `$ grep "." --count written_2/non-fiction/OUP/Abernathy/ch1.txt`
@@ -12,7 +12,7 @@ In these examples, the -c command-line option ensures that the output returns th
 This is useful because it easily allows the user to determine how many lines match a certain line of text: instead of having to save the output to a file and using `$ wc`, the user can simply use this.
 *I found about this from asking OpenAI's chatGPT "what are some command line options for grep".*
 ***
-# -n (or --line-number)
+## -n (or --line-number)
 
 Example 1
 Input Command: `$ grep -n "serene" written_2/travel_guides/berlitz2/Amsterdam-WhereToGo.txt`
@@ -44,7 +44,7 @@ In these examples, the -n command-line option ensures that the output not only r
 This can be useful if one wants to know not only whether some text is within a file, but also what line it is in within that file.
 *I found about this from asking OpenAI's chatGPT "what are some command line options for grep".*
 ***
-# -r (or --recursive)
+## -r (or --recursive)
 
 Example 1
 Input Command: `$ grep -r "serenity" written_2`
@@ -103,11 +103,11 @@ written_2/travel_guides/berlitz1/WhereToMallorca.txt:        an all-purpose port
 written_2/travel_guides/berlitz1/WhereToMallorca.txt:        where pleasure craft congregate near the ships’ chandlers, shops, and  
 written_2/travel_guides/berlitz1/WhereToMallorca.txt:        curving inlet lined with fishing boats on one side and pleasure craft`
 
-Blah
-
+In these examples, the -r command-line option ensures that the grep commands recursively searches through the current directory and all its subdirectories, searching through the files within those directories checking for the outlined keyword in the file. 
+This can be useful to search for certain text through an entire directory and/or subdirectory, instead of having to do so in multiple commands.
 *I found about this from asking OpenAI's chatGPT "what are some command line options for grep".*
 ***
-# -o (or --only-matching)
+## -o (or --only-matching)
 
 Example 1
 Input Command: 
