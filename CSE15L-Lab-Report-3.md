@@ -110,7 +110,7 @@ This can be useful to search for certain text through an entire directory and/or
 ## -o (or --only-matching)
 
 **Example 1**
-**Input Command:** $ grep -o `"democracy" written_2/travel_guides/berlitz2/Athens-History.txt`
+**Input Command:** `$ grep -o "democracy" written_2/travel_guides/berlitz2/Athens-History.txt`
 **Output:** `democracy
 democracy
 democracy
