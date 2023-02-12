@@ -110,12 +110,24 @@ This can be useful to search for certain text through an entire directory and/or
 ## -o (or --only-matching)
 
 Example 1
-Input Command: 
-Output: 
+Input Command: $ grep -o `"democracy" written_2/travel_guides/berlitz2/Athens-History.txt`
+Output: `democracy
+democracy
+democracy
+democracy`
 Example 2
-Input Command:
-Output: 
+Input Command: `$ grep "gold" -o written_2/travel_guides/berlitz2/California-History.txt`
+Output: `gold
+gold
+gold
+gold
+gold
+gold
+gold
+gold
+gold`
 
-Blah
+In these examples, the -o command-line option ensures that the output only shows the matching parts of a line instead of the entire line.
+This can be useful if one wants to only print the parts of a file which have the matching text to the terminal, instead of the lines of entire text.
 
 *I found about this from asking OpenAI's chatGPT "what are some command line options for grep".*
