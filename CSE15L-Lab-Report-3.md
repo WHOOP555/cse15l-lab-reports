@@ -11,7 +11,7 @@
 
 **Input Command:** `$ grep -c "Bahamas" written_2/travel_guides/berlitz2/Bahamas-History.txt`
 
-**Output: **`23`
+**Output:** `23`
 
 In these examples, the -c command-line option ensures that the output returns the number of matching lines with the text in quotes (instead of the actual lines themselves).
 This is useful because it easily allows the user to determine how many lines match a certain line of text: instead of having to save the output to a file and using `$ wc`, the user can simply use this.
