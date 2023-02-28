@@ -22,7 +22,7 @@ I pressed `<up><up><up><up><enter>` and then `<up><up><up><up><enter>` again to 
  
 <img width="535" alt="image" src="https://user-images.githubusercontent.com/122576045/221514484-4363ad95-1fa2-4518-b071-387847a9dc6c.png">
 
-9. I then typed `git add ListExamples.java`, to update the changes to the file such that I can commit them to my repository. I then typed in `git commit -m ""` 
+9. I then typed `git add ListExamples.java` and hit `<enter>`, to update the changes to the file such that I can commit them to my repository. I then typed in `git commit -m "Fixed bugs in ListExamples.java"` and hit `<enter>` to commit the changes. Lastly, I pushed the changes to my fork of the repository by typing in `git push` and hitting `<enter>`. 
 
 <img width="526" alt="image" src="https://user-images.githubusercontent.com/122576045/221518382-7f664820-0da2-4b16-a9ff-89d4e6cb26b1.png">
 
