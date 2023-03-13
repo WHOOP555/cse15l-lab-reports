@@ -115,6 +115,7 @@ written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt`
 
 In these examples, the -name command-line option ensures that the output returns the files that have the matching text in quotes from the respective files/directories.
 This is useful because it easily allows the user to determine patterns between certain files in a directory and search for files with related names. Furthermore, -name can be used to search for a type of file as well, as the file extension can be a part of the file name pattern in the quotes.
+
 *I found about this from asking OpenAI's chatGPT "what are some command line options and uses for find".*
 ***
 ## -type
@@ -188,6 +189,7 @@ written_2/non-fiction/OUP/Rybczynski/ch3.txt`
 
 In these examples, the -type command-line option ensures that the output returns the type of output we are searching for within the file/directory we are finding in. For example, to find directories we would used -type d and to find files -type f.
 This can be useful if one wants to ensure that they only find certain types of output (even links) when going through some directory.
+
 *I found about this from asking OpenAI's chatGPT "what are some command line options and uses for find".*
 ***
 ## -size
@@ -229,6 +231,7 @@ written_2/travel_guides/berlitz2`
 
 In these examples, the -size command-line option allows one to look through a directory of files and have the command return only those files that are greater than or less than a certain number of bytes, kilobytes, megabytes, or gigabytes. In these examples we use + and - to show how to search for bigger and smaller files than the specified amount respectively.
 This can be useful to sort certain files in a directory based on their file size. 
+
 *I found about this from asking OpenAI's chatGPT "what are some command line options and uses for find".*
 ***
 ## -exec
