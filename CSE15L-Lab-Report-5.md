@@ -195,68 +195,40 @@ This can be useful if one wants to ensure that they only find certain types of o
 
 **Example 1**
 
-**Input Command:** `$ grep -r "serenity" written_2`
+**Input Command:** `$ find written_2/ -size -1M`
 
-**Output:** `written_2/travel_guides/berlitz1/WhereToFrance.txt:        serenity that is in itself as evocative as the remaining concrete
-written_2/travel_guides/berlitz1/WhereToIndia.txt:        repose and serenity made from a delicate combination of
-written_2/travel_guides/berlitz1/WhereToItaly.txt:        can appreciate the typical Venetian serenity even without understanding
-written_2/travel_guides/berlitz1/WhereToJapan.txt:        the eyes half-closed in an expression of profound serenity. The statue    
-written_2/travel_guides/berlitz1/WhereToJapan.txt:        on Sundays it offers all the serenity of rush hour at Kyoto’s garish      
-written_2/travel_guides/berlitz2/Algarve-WhereToGo.txt:After the salty flavor of Olhão and the rural serenity of Moncarapacho, the aristocratic bearings of Tavira, one of the true gems of the Algarve, may come as something of a surprise. One of the region’s most historic cities, its Moorish, Reconquista, and Renaissance roots are clearly visible.`
+**Output:** `written_2/
+written_2/non-fiction
+written_2/non-fiction/OUP
+written_2/non-fiction/OUP/Abernathy
+written_2/non-fiction/OUP/Berk
+written_2/non-fiction/OUP/Castro
+written_2/non-fiction/OUP/Fletcher
+written_2/non-fiction/OUP/Kauffman
+written_2/non-fiction/OUP/Rybczynski
+written_2/travel_guides
+written_2/travel_guides/berlitz1
+written_2/travel_guides/berlitz2`
 
 **Example 2**
 
-**Input Command:** `$ grep "pleasure" -r written_2/travel_guides/berlitz1`
+**Input Command:** `$ find written_2/ -size -1k`
 
-**Output:** `written_2/travel_guides/berlitz1/HistoryHawaii.txt:        pleasure. These Western ideas, which seemed to amuse Kamehameha, were
-written_2/travel_guides/berlitz1/HistoryMalaysia.txt:        find a place next to worldly pleasures. The Malay aristocracy preferred
-written_2/travel_guides/berlitz1/IntroIndia.txt:        least, pleasure. At the center of the confrontation with the harsh
-written_2/travel_guides/berlitz1/IntroJamaica.txt:        The recreational pleasures that ordinary islanders enjoy
-written_2/travel_guides/berlitz1/JungleMalaysia.txt:        be a rare sensual pleasure. Sounds flood in from all sides: the buzz    
-written_2/travel_guides/berlitz1/WhatToHongKong.txt:        licensed by the Hong Kong authorities can run pleasure boats in local
-written_2/travel_guides/berlitz1/WhatToIbiza.txt:        one of the area’s pleasures. A cup of coffee buys you a ringside seat      
-written_2/travel_guides/berlitz1/WhatToIndia.txt:        At least half the pleasure is in the bargaining. If you
-written_2/travel_guides/berlitz1/WhatToIndia.txt:        bargain, there is real aesthetic pleasure in seeing, at the end of the     
-written_2/travel_guides/berlitz1/WhatToItaly.txt:        Sardinia, and Sicily, swimming is a pleasure that requires a few words     
-written_2/travel_guides/berlitz1/WhatToJamaica.txt:        few hippies left today, but the pleasures are still pretty earthy: it’s
-written_2/travel_guides/berlitz1/WhatToLakeDistrict.txt:        view and it will bring you years of pleasure.
-written_2/travel_guides/berlitz1/WhereToDublin.txt:        series of pleasure gardens in the Italianate style in 1865, with
-written_2/travel_guides/berlitz1/WhereToEdinburgh.txt:        Sailboats and small pleasure craft dock at Cramond, where
-written_2/travel_guides/berlitz1/WhereToEgypt.txt:        One of the great pleasures of a trip to Aswan is taking a
-written_2/travel_guides/berlitz1/WhereToFrance.txt:        One of the simplest pleasures here is the stunning view of
-written_2/travel_guides/berlitz1/WhereToFrance.txt:        important pleasure of Provence is not the sightseeing but the
-written_2/travel_guides/berlitz1/WhereToFrance.txt:        exploring Bourges in the evenings a pleasure. The cathedral in
-written_2/travel_guides/berlitz1/WhereToHongKong.txt:        Browsing is a real pleasure in Macau’s main streets and
-written_2/travel_guides/berlitz1/WhereToIndia.txt:        served as the General’s pleasure-palace, but it was to be the death of    
-written_2/travel_guides/berlitz1/WhereToIndia.txt:        air here is sweet, cool, and clear, and the pleasure of the quaint and    
-written_2/travel_guides/berlitz1/WhereToIndia.txt:        made their way to other lakes for duck-shoots or just for the pleasures   
-written_2/travel_guides/berlitz1/WhereToIndia.txt:        (Hall of pleasure), with doors inlaid in ivory and sandalwood. Inside,    
-written_2/travel_guides/berlitz1/WhereToIndia.txt:        A major part of the pleasure of Darjeeling is in getting
-written_2/travel_guides/berlitz1/WhereToIsrael.txt:        region; pleasure cruisers run to Capernaeum and other places; and you    
-written_2/travel_guides/berlitz1/WhereToIstanbul.txt:        promenades. Nearby is the Kültür Parkı, a huge, shady pleasure garden,
-written_2/travel_guides/berlitz1/WhereToItaly.txt:        humid in most big cities, but some find an odd, ghostly pleasure in       
-written_2/travel_guides/berlitz1/WhereToItaly.txt:        man who drew no distinction between the pleasures of mind and body. In    
-written_2/travel_guides/berlitz1/WhereToItaly.txt:        culinary pleasures.
-written_2/travel_guides/berlitz1/WhereToItaly.txt:        Half the pleasure of this lovely town dramatically perched
-written_2/travel_guides/berlitz1/WhereToItaly.txt:        its pleasures before you even set foot inside the museums, churches,      
-written_2/travel_guides/berlitz1/WhereToItaly.txt:        chief pleasure of the south, or Mezzogiorno, is the people, who are       
-written_2/travel_guides/berlitz1/WhereToItaly.txt:        bundle of old bones and stones, but sheer pleasure for anyone even
-written_2/travel_guides/berlitz1/WhereToItaly.txt:        precipice, said to be the last pleasure enjoyed by the emperor’s
-written_2/travel_guides/berlitz1/WhereToItaly.txt:        pleasure among the exotic flowers and trees and Arab fountain of its      
-written_2/travel_guides/berlitz1/WhereToJapan.txt:        tranquilizing pleasures provided within.
-written_2/travel_guides/berlitz1/WhereToJapan.txt:        Here, business and pleasure are inextricably linked — and
-written_2/travel_guides/berlitz1/WhereToJapan.txt:        you to soak up the heady atmosphere of pleasure and commerce that has     
-written_2/travel_guides/berlitz1/WhereToJapan.txt:        ideal introduction to the pleasures of bathing Japanese-style, whether    
-written_2/travel_guides/berlitz1/WhereToLakeDistrict.txt:        great pleasure in his later years.
-written_2/travel_guides/berlitz1/WhereToLosAngeles.txt:        pleasure-seeker who goes with the flow. While there’s much to see    
-written_2/travel_guides/berlitz1/WhereToLosAngeles.txt:        A number of boat trips leave from the pleasure pier. These
-written_2/travel_guides/berlitz1/WhereToMalaysia.txt:        pleasure, not least of all for the myriad brightly colored butterflies
-written_2/travel_guides/berlitz1/WhereToMallorca.txt:        an all-purpose port for commercial, naval, and pleasure craft (there’s 
-written_2/travel_guides/berlitz1/WhereToMallorca.txt:        where pleasure craft congregate near the ships’ chandlers, shops, and  
-written_2/travel_guides/berlitz1/WhereToMallorca.txt:        curving inlet lined with fishing boats on one side and pleasure craft`
+**Output:** `written_2/
+written_2/non-fiction
+written_2/non-fiction/OUP
+written_2/non-fiction/OUP/Abernathy
+written_2/non-fiction/OUP/Berk
+written_2/non-fiction/OUP/Castro
+written_2/non-fiction/OUP/Fletcher
+written_2/non-fiction/OUP/Kauffman
+written_2/non-fiction/OUP/Rybczynski
+written_2/travel_guides
+written_2/travel_guides/berlitz1
+written_2/travel_guides/berlitz2`
 
-In these examples, the -r command-line option ensures that the grep commands recursively searches through the current directory and all its subdirectories, searching through the files within those directories checking for the outlined keyword in the file. 
-This can be useful to search for certain text through an entire directory and/or subdirectory, instead of having to do so in multiple commands.
+In these examples, the -size command-line option allows one to look through a directory of files and have the command return only those files that are greater than or less than a certain number of bytes, kilobytes, megabytes, or gigabytes. In these examples we use + and - to show how to search for bigger and smaller files than the specified amount respectively.
+This can be useful to sort certain files in a directory based on their file size. 
 *I found about this from asking OpenAI's chatGPT "what are some command line options and uses for find".*
 ***
 ## -print
