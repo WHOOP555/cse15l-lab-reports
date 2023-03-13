@@ -117,6 +117,7 @@ In these examples, the -name command-line option ensures that the output returns
 This is useful because it easily allows the user to determine patterns between certain files in a directory and search for files with related names. Furthermore, -name can be used to search for a type of file as well, as the file extension can be a part of the file name pattern in the quotes.
 
 *I found about this from asking OpenAI's chatGPT "what are some command line options and uses for find".*
+
 ***
 ## -type
 
@@ -191,6 +192,7 @@ In these examples, the -type command-line option ensures that the output returns
 This can be useful if one wants to ensure that they only find certain types of output (even links) when going through some directory.
 
 *I found about this from asking OpenAI's chatGPT "what are some command line options and uses for find".*
+
 ***
 ## -size
 
@@ -233,6 +235,7 @@ In these examples, the -size command-line option allows one to look through a di
 This can be useful to sort certain files in a directory based on their file size. 
 
 *I found about this from asking OpenAI's chatGPT "what are some command line options and uses for find".*
+
 ***
 ## -exec
 
