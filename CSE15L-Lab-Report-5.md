@@ -231,33 +231,156 @@ In these examples, the -size command-line option allows one to look through a di
 This can be useful to sort certain files in a directory based on their file size. 
 *I found about this from asking OpenAI's chatGPT "what are some command line options and uses for find".*
 ***
-## -print
+## -exec
 
 
 **Example 1**
 
-**Input Command:** `$ grep -o "democracy" written_2/travel_guides/berlitz2/Athens-History.txt`
+**Input Command:** `$ find written_2 -type f -name "*.txt" -exec grep -o "Bahamas" {} \;`
 
-**Output:** `democracy
-democracy
-democracy
-democracy`
+**Output:** `Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas
+Bahamas`
 
 **Example 2**
 
-**Input Command:** `$ grep "gold" -o written_2/travel_guides/berlitz2/California-History.txt`
+**Input Command:** `$ find written_2 -name "*-WhatToDo.txt" -exec grep -c "fun" {} \;`
 
-**Output:** `gold
-gold
-gold
-gold
-gold
-gold
-gold
-gold
-gold`
+**Output:** `2
+2
+1
+2
+1
+2
+2
+1
+5
+0
+0
+3
+2
+1
+2
+3
+4
+2
+2
+3
+1
+3
+2
+5`
 
-In these examples, the -o command-line option ensures that the output only shows the matching parts of a line instead of the entire line.
-This can be useful if one wants to only print the parts of a file which have the matching text to the terminal, instead of the lines of entire text.
+In these examples, the -exec command line option allows one to execute a command on the files/directories that the find command would return.
+This can be useful if one wants to bypass having to save the output of find to a file and then run another command on that to get their final command: this can be useful to minimize the amount of commands used. 
 
 *I found about this from asking OpenAI's chatGPT "what are some command line options and uses for find".*
